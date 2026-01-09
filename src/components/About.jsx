@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-import butterfly from "../assets/butterfly.png";
-import envr from "../assets/envr.png";
-import leaf01 from "../assets/leaf01.png";
-import circle from "../assets/arrow.png";
+
 export default function AboutUs() {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <section className="relative py-12 px-6 overflow-hidden">
-     
+   
       <img
-        src={envr}
+        src="/assets/envr.png"
         alt="environment background"
         className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
       />
@@ -21,29 +18,28 @@ export default function AboutUs() {
           About Us
         </h2>
 
-     
         <h1 className="text-2xl mt-6 font-kaoly font-bold text-primary bg-gray-100 px-6 py-2 rounded-xl shadow-md mb-6 inline-block">
           Greenify
         </h1>
 
-     
+       
         <img
-          src={butterfly}
+          src="/assets/butterfly.png"
           alt="butterfly"
           className="absolute top-0 right-0 w-12 h-12"
         />
         <img
-          src={circle}
+          src="/assets/arrow.png"
           alt="circle"
           className="absolute left-0 bottom-0 w-12 h-12"
         />
         <img
-          src={leaf01}
+          src="/assets/leaf01.png"
           alt="leaf01"
           className="absolute right-6 bottom-0 w-12 h-12"
         />
 
-   
+     
         <p className="text-gray-700 text-lg mb-6 text-justify">
           At Greenify, we are more than just an e-commerce website; we are a
           passionate community dedicated to fostering a sustainable and
@@ -53,7 +49,7 @@ export default function AboutUs() {
           difference in the world.
         </p>
 
-       
+     
         {expanded && (
           <div className="mb-6">
             <h3 className="text-2xl font-bold text-green-900 mb-2">
