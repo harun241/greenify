@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaoly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@600;800&display=swap');
+@import "tailwindcss";
+
+
+
+
+/* Root Colors */
+:root {
+  --primary-color: #55B76B;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: #44985c;
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--primary-color);
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+/* Default Body Font */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Kaoly Font Class */
+.font-kaoly {
+  font-family: 'Kaoly', cursive;
+}
+
+/* Typography Classes */
+.text-h1 { font-size: 48px; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+.text-h2 { font-size: 40px; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+.text-h3 { font-size: 36px; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+.text-h4 { font-size: 16px; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+
+.text-b1 { font-size: 20px; font-weight: 600; font-family: 'Lato', sans-serif; }
+.text-b2 { font-size: 24px; font-weight: 800; font-family: 'Lato', sans-serif; }
